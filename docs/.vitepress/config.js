@@ -500,6 +500,7 @@ const router = {
             link: "/实际工作经验/13-总结",
         },
     ],
+    面试笔记: [{ text: "总结", link: "/面试笔记/总结" }],
 };
 export default {
     title: "wint",
@@ -512,52 +513,31 @@ export default {
         siteTitle: "wint",
         nav: [
             {
-                text: "前端基础知识",
-                items: router["前端基础知识"],
+                text: "面试笔记",
+                items: router["面试笔记"],
             },
             {
-                text: "数据结构和算法",
-                items: router["数据结构和算法"],
-            },
-            {
-                text: "编写高质量代码",
-                items: router["编写高质量代码"],
-            },
-            {
-                text: "分析解决问题",
-                items: router["分析解决问题"],
-            },
-            {
-                text: "软技能",
-                items: router["软技能"],
-            },
-            {
-                text: "更多",
+                text: "前端面试100问",
                 items: [
+                    { text: "前端基础知识", link: "/前端基础知识/00-开始" },
+                    { text: "数据结构和算法", link: "/数据结构和算法/00-开始" },
+                    { text: "编写高质量代码", link: "/编写高质量代码/00-开始" },
+                    { text: "分析解决问题", link: "/分析解决问题/00-开始" },
+                    { text: "软技能", link: "/软技能/00-开始" },
                     { text: "项目设计", link: "/项目设计/00-开始" },
                     { text: "知识广度", link: "/知识广度/00-开始" },
                     { text: "知识深度", link: "/知识深度/00-开始" },
                     { text: "实际工作经验", link: "/实际工作经验/00-开始" },
                 ],
             },
-            // {
-            //     text: "项目设计",
-            //     items: router["项目设计"],
-            // },
-            // {
-            //     text: "知识广度",
-            //     items: router["知识广度"],
-            // },
-            // {
-            //     text: "知识深度",
-            //     items: router["知识深度"],
-            // },
-            // {
-            //     text: "实际工作经验",
-            //     items: router["实际工作经验"],
-            // },
         ],
         sidebar: {
+            "/面试笔记/": [
+                {
+                    text: "面试笔记",
+                    items: router["面试笔记"],
+                },
+            ],
             "/前端基础知识/": [
                 {
                     text: "前端基础知识",
