@@ -500,7 +500,25 @@ const router = {
             link: "/实际工作经验/13-总结",
         },
     ],
-    面试笔记: [{ text: "总结", link: "/面试笔记/总结" }],
+    面试笔记: [
+        { text: "技术面", link: "/面试笔记/技术面" },
+        { text: "主管面", link: "/面试笔记/主管面" },
+    ],
+    TypeScript1: [
+        { text: "TypeScript 是什么", link: "/TypeScript1/README" },
+        { text: "安装 TypeScript", link: "/TypeScript1/install" },
+        { text: "编写第一个 TypeScript 程序", link: "/TypeScript1/start" },
+    ],
+    TypeScript2: [
+        { text: "基础类型", link: "/TypeScript2/type" },
+        { text: "变量声明", link: "/TypeScript2/declare" },
+        { text: "接口", link: "/TypeScript2/interface" },
+        { text: "类", link: "/TypeScript2/class" },
+        { text: "函数", link: "/TypeScript2/function" },
+        { text: "泛型", link: "/TypeScript2/generic" },
+        { text: "类型推断", link: "/TypeScript2/inference" },
+        { text: "高级类型", link: "/TypeScript2/advance" },
+    ],
 };
 export default {
     title: "wint",
@@ -512,6 +530,16 @@ export default {
         logo: "/logo.png",
         siteTitle: "wint",
         nav: [
+            {
+                text: "TypeScript",
+                items: [
+                    { text: "初识 TypeScript", link: "/TypeScript1/readme" },
+                    {
+                        text: "TypeScript 常用语法",
+                        link: "/TypeScript2/type",
+                    },
+                ],
+            },
             {
                 text: "面试笔记",
                 items: router["面试笔记"],
@@ -532,6 +560,18 @@ export default {
             },
         ],
         sidebar: {
+            "/TypeScript1/": [
+                {
+                    text: "初识 TypeScript",
+                    items: router["TypeScript1"],
+                },
+            ],
+            "/TypeScript2/": [
+                {
+                    text: "TypeScript 常用语法",
+                    items: router["TypeScript2"],
+                },
+            ],
             "/面试笔记/": [
                 {
                     text: "面试笔记",
