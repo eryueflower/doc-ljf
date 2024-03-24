@@ -505,7 +505,7 @@ const router = {
         { text: "主管面", link: "/面试笔记/主管面" },
     ],
     TypeScript1: [
-        { text: "TypeScript 是什么", link: "/TypeScript1/README" },
+        { text: "TypeScript 是什么", link: "/TypeScript1/readme" },
         { text: "安装 TypeScript", link: "/TypeScript1/install" },
         { text: "编写第一个 TypeScript 程序", link: "/TypeScript1/start" },
     ],
@@ -521,13 +521,13 @@ const router = {
     ],
 };
 export default {
+    outDir: "../blog",
     title: "wint",
     description: "Just playing around.",
-    outlineTitle: "In hac pagina",
     lastUpdated: true,
-    base: "/",
+    head: [["link", { rel: "icon", href: "/author.ico" }]],
     themeConfig: {
-        logo: "/logo.png",
+        logo: "/author.ico",
         siteTitle: "wint",
         nav: [
             {
